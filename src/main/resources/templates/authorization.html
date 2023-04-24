@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Авторизация</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+    .bg-image {
+      background-image: url('https://images.ctfassets.net/3s5io6mnxfqz/6VYOSyLdVerNJ8Yn5RJA2b/7545352e4f3f5a91eb4b6374497f5117/AdobeStock_42720852.jpeg');
+      background-size: cover;
+      background-position: center;
+      height: 100vh;
+      overflow: auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .form-container {
+      background-color: rgba(255, 255, 255, 0.9);
+      padding: 2rem;
+      border-radius: 1rem;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      max-width: 600px;
+      width: 100%;
+    }
+    .form-title {
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+    .form-label {
+      display: block;
+      font-size: 1.2rem;
+      text-align: center;
+      color: #3a3a3a;
+      margin-bottom: 0.5rem;
+    }
+    .form-control {
+      margin: 0 auto;
+      display: block;
+      width: 100%;
+      max-width: 400px;
+      padding: 0.5rem;
+      border: 1px solid #ced4da;
+      border-radius: 0.25rem;
+      font-size: 1rem;
+    }
+    button {
+      border-style: solid;
+      border-radius: 50px;
+      width: 100%;
+      margin-top: 1rem;
+    }
+  </style>
+</head>
+<body>
+<div class="bg-image">
+  <div class="form-container">
+    <h1 class="form-title">Авторизация</h1>
+    <form>
+      <div class="mb-5">
+        <label for="username" class="form-label">Имя пользователя:</label>
+        <input type="text" class="form-control" id="username">
+      </div>
+      <div class="mb-5">
+        <label for="password" class="form-label">Пароль:</label>
+        <input type="password" class="form-control" id="password">
+      </div>
+      <div class="mb-5">
+        <button type="submit" class="btn btn-primary">Войти</button>
+      </div>
+    </form>
+  </div>
+</div>
+</body>
+</html>
